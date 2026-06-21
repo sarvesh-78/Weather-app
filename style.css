@@ -1,0 +1,134 @@
+
+body{
+    margin:0;
+}
+
+.bg-video {
+    position: relative;
+    overflow: hidden; 
+    height: 80vh; 
+}
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1; /
+}
+
+.Main{
+    text-align: center;
+    font-size:42px;
+    font-family: Literata;
+    margin: 10px;
+    color: white;
+    text-shadow: 3px 2px 2px black ;
+}
+
+.cityInp{
+    height: 30px;
+    width: 220px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Roboto Flex;
+    padding: 5px;
+}
+
+.inpButton{
+    width: 100px;
+    height: 45px;
+    background-color: gold;
+    border-radius: 5px;
+    border: 0;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Roboto Flex;
+    cursor: pointer;
+}
+
+.inpButton:hover{
+    background-color: rgb(253, 249, 37);
+}
+
+.card{
+    padding: 15px;
+    width: 300px;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 3px 50px rgba(0, 0, 0, 0.362); 
+    background: #ffffff0c;
+    text-shadow: 3px 2px 2px black;
+    backdrop-filter: blur(10px);
+    margin-top: 10px;
+}
+
+.cityName{
+    font-family: DynaPuff;
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.cityTemp{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Roboto Flex;
+}
+
+.cityHumidity{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Roboto Flex;
+}
+
+.weatherSymbol{
+    margin: 0;
+    font-size: 48px;
+}
+
+.Container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+hr {
+    width: 100%;
+    border: 0;
+    border-top: 2px solid black; 
+    margin: 0;
+}
+
+.errorDisplay{
+    font-size: 1.5rem;
+    color: hsla(0, 100%, 50%, 0.75);
+    font-family: Roboto Flex;
+    text-shadow: none;
+}
+
+
+/* map css */
+
+#weather-map {
+    position: relative;
+    height: 400px;
+}
+
+#weather-map .cloud-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(100, 100, 100, 0.6); /* Cloud color - modify this as you need */
+    z-index: 2;
+    pointer-events: none; /* To ensure interactivity with the map */
+}
